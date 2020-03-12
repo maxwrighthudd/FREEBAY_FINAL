@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/registration"
+    android:background="@drawable/background_colour">
+
+    <TextView
+        android:id="@+id/createTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/create_title"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="52dp"
+        android:layout_height="54dp"
+        app:srcCompat="@drawable/whitelogo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/username_form"
+        android:layout_width="290dp"
+        android:layout_height="42dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/custom_form"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="60dp"
+        android:textColorHint="@color/lightGrey"
+        android:hint="@string/username_hint"
+        android:inputType="textPersonName"
+        android:textSize="16dp"
+     />
+
+    <EditText
+        android:id="@+id/email_form"
+        android:layout_width="290dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginLeft="60dp"
+        android:background="@drawable/custom_form"
+        android:ems="10"
+        android:textColorHint="@color/lightGrey"
+        android:fontFamily="@font/montserrat"
+        android:hint="@string/email_hint"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        android:textSize="16dp"
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="290dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="340dp"
+        android:layout_marginLeft="60dp"
+        android:textColorHint="@color/lightGrey"
+        android:background="@drawable/custom_form"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:textSize="16dp"
+         />
+
+    <EditText
+        android:id="@+id/passwordVerf"
+        android:layout_width="290dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="60dp"
+        android:background="@drawable/custom_form"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword"
+        android:textColorHint="@color/lightGrey"
+        android:paddingLeft="10dp"
+        android:textSize="16dp"
+    />
+
+    <CheckBox
+        android:id="@+id/termsCheckbox"
+        android:layout_width="249dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="460dp"
+        android:layout_marginLeft="85dp"
+        android:buttonTint="@color/white"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/terms_text"
+        android:textColor="@color/white"
+        android:textSize="10dp"
+        />
+
+    <Button
+        android:id="@+id/continueButton"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="580dp"
+        android:layout_marginLeft="75dp"
+        android:background="@drawable/border_button"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/continue_btn"
+        android:textColor="@color/white"
+        />
+
+
+</RelativeLayout>
