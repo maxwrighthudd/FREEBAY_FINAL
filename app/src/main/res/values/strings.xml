@@ -34,6 +34,7 @@
     <string name="support_address">Queensgate, Huddersfield, HD1 3DH</string>
     <string name="support_email">Support@freebay.co.uk</string>
     <string name="support_number">07234567897</string>
+    <string name="tutorial_text">Open Tutorial</string>
 
     <!--Products-->
     <string name="products_title">PRODUCTS</string>
