@@ -16,7 +16,7 @@
         <meta-data android:name="com.google.android.geo.API_KEY"
             android:value="@string/map_key"></meta-data>
 
-        <activity android:name=".LaunchPage">
+        <activity android:name=".MainNavigation">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

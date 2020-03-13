@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.android.gms.maps.CameraUpdate;
@@ -24,7 +25,7 @@ import androidx.fragment.app.Fragment;
 public class SupportFragment extends Fragment implements OnMapReadyCallback{
 
     TextView tutorial;
-    //GoogleMap map;
+    GoogleMap map;
 
     @Nullable
     @Override
@@ -35,15 +36,17 @@ public class SupportFragment extends Fragment implements OnMapReadyCallback{
 //                .findFragmentById(R.id.map);
 //        mapFragment.getMapAsync(this);
 
-//        tutorial.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Uri uri = Uri.parse("http://www.google.com"); // missing 'http://' will cause crashed
-//                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-//                startActivity(intent);
-//            }
-//
-//        });
+        tutorial = (TextView) view.findViewById(R.id.tutorialText);
+        tutorial.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_VIEW);
+                intent.addCategory(Intent.CATEGORY_BROWSABLE);
+                intent.setData(Uri.parse("http://google.com")); //change to website
+                startActivity(intent);
+            }
+        });
         return view;
     }
 
