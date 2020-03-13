@@ -23,7 +23,7 @@
         />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/logo"
         android:layout_width="52dp"
         android:layout_height="54dp"
         app:srcCompat="@drawable/whitelogo"
