@@ -89,12 +89,13 @@
         android:id="@+id/locationText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/support_address"
-        android:textColor="@color/white"
-        android:fontFamily="@font/montserrat"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="410dp"
-       />
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/support_map"
+        android:textColor="@color/white" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -116,12 +117,5 @@
         android:fontFamily="@font/montserrat"
         android:text="@string/tutorial_text"
         android:textColor="@color/white" />
-
-    <!--    <fragment-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="250dp"-->
-<!--        android:id="@+id/map"-->
-<!--        android:name="com.google.android.gms.maps.SupportMapFragment"-->
-<!--        android:layout_alignParentBottom="true"></fragment>-->
 
 </RelativeLayout>

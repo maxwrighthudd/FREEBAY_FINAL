@@ -12,7 +12,6 @@ import android.widget.TextView;
 
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
-import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
@@ -22,19 +21,15 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class SupportFragment extends Fragment implements OnMapReadyCallback{
+public class SupportFragment extends Fragment {
 
     TextView tutorial;
-    GoogleMap map;
+    TextView openMap;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_support, container, false);
-
-//        SupportMapFragment mapFragment = (SupportMapFragment) getFragmentManager()
-//                .findFragmentById(R.id.map);
-//        mapFragment.getMapAsync(this);
 
         tutorial = (TextView) view.findViewById(R.id.tutorialText);
         tutorial.setOnClickListener(new View.OnClickListener() {
@@ -47,16 +42,18 @@ public class SupportFragment extends Fragment implements OnMapReadyCallback{
                 startActivity(intent);
             }
         });
+
+        openMap = (TextView) view.findViewById(R.id.locationText);
+        openMap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), GoogleMap.class);
+                startActivity(intent);
+            }
+        });
+
         return view;
     }
 
-    @Override
-    public void onMapReady(GoogleMap googleMap) {
-//        map = googleMap;
-//
-//        LatLng uoh = new LatLng(53.643727, -1.7809775);
-//        map.addMarker(new MarkerOptions().position(uoh).title("Headquaters"));
-//        map.moveCamera(CameraUpdateFactory.newLatLng(uoh));
-    }
 
 }

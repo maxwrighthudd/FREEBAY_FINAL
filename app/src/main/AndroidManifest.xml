@@ -16,7 +16,7 @@
         <meta-data android:name="com.google.android.geo.API_KEY"
             android:value="@string/map_key"></meta-data>
 
-        <activity android:name=".MainNavigation">
+        <activity android:name=".LaunchPage"> <!--Change this to .MainNavigation when developing away from login/reg-->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,6 +25,7 @@
         </activity>
         <activity android:name=".LoginPage"></activity>
         <activity android:name=".RegistrationPage"></activity>
+        <activity android:name=".GoogleMap"></activity>
     </application>
 
 </manifest>
